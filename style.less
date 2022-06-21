@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+.bidding-dashboard-index {
+  background-color: #DADADA;
+
+  .bidding-dashboard-container {
+    display: flex;
+    padding-top: 25px;
+
+    .left-side-bar {
+      background-color: white;
+      width: 80px;
+      padding: 58px 16px;
+      border-radius: 6px;
+      position: relative;
+
+      .right-icon {
+        width: 24px;
+        height: 24px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: -12px;
+        top: 13px;
+      }
+
+      .tab-bar-item {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        i {
+          color: #999999;
+          font-size: 24px;
+        }
+
+        &.active {
+          background: #1F4F9B;
+          border-radius: 4px;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .right-side {
+      margin-left: 22px;
+      padding-top: 20px;
+      flex-grow: 1;
+
+      .breadcrumbs {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 18px;
+          color: #333333;
+        }
+
+        span {
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          background: #999999;
+          border-radius: 50%;
+          margin: 0 18px;
+        }
+      }
+
+      .dashboard-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 22px;
+        margin-bottom: 19px;
+
+        .dashboard-card {
+          background: #FFFFFF;
+          border-radius: 6px;
+          padding: 16px;
+
+          .card-label {
+            font-size: 14px;
+            line-height: 18px;
+            color: #333333;
+            margin-bottom: 5px;
+          }
+
+          .card-number {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 35px;
+            color: #333333;
+            margin-bottom: 19px;
+          }
+
+          .card-percent {
+            display: flex;
+            align-items: center;
+
+            .percent {
+              font-size: 14px;
+              color: #FFFFFF;
+              border-radius: 4px;
+              padding: 2px 12px;
+              margin-right: 18px;
+
+              &.green {
+                background: #07AB58;
+              }
+
+              &.orange {
+                background: #EE6D0F;
+              }
+            }
+
+            .percent-label {
+              font-size: 12px;
+              color: #999999;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .dashboard-charts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 29px;
+        margin-bottom: 9px;
+
+        .dashboard-chart {
+          background: #FFFFFF;
+          border-radius: 6px;
+          padding: 30px 50px;
+
+          .chart-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 24px;
+          }
+
+          .chart {
+            width: 250px;
+            height: 250px;    
+            margin: 0 auto;
+          }
+
+          .legends {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px 30px;
+            margin-top: 24px;
+
+            .legend {
+              display: flex;
+              align-items: center;
+
+              .dot {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-right: 6px;
+                border-radius: 50%;
+
+                &.color1 {
+                  background: #4079D1;
+                }
+
+                &.color2 {
+                  background: #E58514;
+                }
+
+                &.color3 {
+                  background: #1EA728;
+                }
+
+                &.color4 {
+                  background: #DF2727;
+                }
+
+                &.color5 {
+                  background: #212121;
+                }
+              }
+
+              .text {
+                font-size: 14px;
+                line-height: 18px;
+                color: #333333;
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
