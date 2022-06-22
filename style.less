@@ -219,7 +219,6 @@
         background: #ffffff;
         border-radius: 6px;
         padding: 24px 19px;
-        overflow: hidden;
 
         .title {
           font-weight: 500;
@@ -405,6 +404,7 @@
             line-height: 18px;
             color: #333333;
             padding-left: 10px;
+            position: relative;
 
             .status {
               height: 34px;
@@ -422,6 +422,41 @@
               &.loaded {
                 color: #07ab58;
                 background: #bfefd2;
+              }
+            }
+
+            button {
+              border: none;
+              outline: none;
+              background-color: transparent;
+            }
+
+            .popup-content {
+              position: absolute;
+              right: 0;
+              width: 130px;
+              background: #ffffff;
+              box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+              border-radius: 4px;
+              padding: 13px 11px;
+              z-index: 1;
+              display: none;
+
+              .item {
+                display: flex;
+                align-items: center;
+                height: 42px;
+
+                i {
+                  font-size: 20px;
+                  margin-right: 10px;
+                }
+
+                label {
+                  font-size: 14px;
+                  line-height: 18px;
+                  color: #333333;
+                }
               }
             }
           }
