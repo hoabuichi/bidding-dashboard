@@ -144,7 +144,9 @@
                   </div>
                 </div>
                 <div class="dashboard-chart">
-                  <p class="chart-title">Top 5 gói thầu có nhiều nhà thầu tham dự</p>
+                  <p class="chart-title">
+                    Top 5 gói thầu có nhiều nhà thầu tham dự
+                  </p>
                   <div class="chart">
                     <canvas id="chart-2"></canvas>
                   </div>
@@ -172,19 +174,231 @@
                   </div>
                 </div>
               </div>
+              <div class="dashboard-tables">
+                <h3 class="title">Kế hoạch lựa chọn nhà thầu</h3>
+                <div class="filter-section">
+                  <div class="left-filter">
+                    <div class="filter-icon first">
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                    <div class="search-input">
+                      <input type="text" placeholder="Tìm kiếm gói thầu" />
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </div>
+                  <div class="right-filter">
+                    <button class="add-btn">Thêm KHLCNT mới</button>
+                  </div>
+                  <div class="filter-option first">
+                    <div class="header">
+                      <h4 class="title">Lọc thông tin</h4>
+                      <button class="clear-filter-btn first">Bỏ lọc</button>
+                    </div>
+                    <div class="options">
+                      <div class="option">
+                        <label>Số hiệu/mã KHLCN</label>
+                        <input placeholder="-" type="text" />
+                      </div>
+                      <div class="option">
+                        <label>Tên</label>
+                        <input placeholder="-" type="text" />
+                      </div>
+                      <div class="option">
+                        <label>Trạng thái</label>
+                        <select>
+                          <option>-</option>
+                          <option>Chưa đăng tải</option>
+                          <option>Đã đăng tải</option>
+                        </select>
+                      </div>
+                      <div class="option">
+                        <label>Ngày đăng</label>
+                        <input type="date" />
+                      </div>
+                    </div>
+                    <button class="filter-btn">Lọc ngay</button>
+                  </div>
+                </div>
+                <table class="dashboard-table">
+                  <tr>
+                    <th>Mã KHLCN</th>
+                    <th>Tên KHLCNT</th>
+                    <th>Tên chủ đầu từ</th>
+                    <th>Tổng mức đầu tư</th>
+                    <th>Ngày đăng tải</th>
+                    <th>Trạng thái</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>02929323023</td>
+                    <td>Mua bán bảo trì hệ thống</td>
+                    <td>Công ty TNHH ...</td>
+                    <td>20.000.000</td>
+                    <td>9:00 25/05/2022</td>
+                    <td><span class="status pending">Chưa đăng tải</span></td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>02929323023</td>
+                    <td>Mua bán bảo trì hệ thống</td>
+                    <td>Công ty TNHH ...</td>
+                    <td>20.000.000</td>
+                    <td>9:00 25/05/2022</td>
+                    <td><span class="status loaded">Chưa đăng tải</span></td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>02929323023</td>
+                    <td>Mua bán bảo trì hệ thống</td>
+                    <td>Công ty TNHH ...</td>
+                    <td>20.000.000</td>
+                    <td>9:00 25/05/2022</td>
+                    <td><span class="status loaded">Chưa đăng tải</span></td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>02929323023</td>
+                    <td>Mua bán bảo trì hệ thống</td>
+                    <td>Công ty TNHH ...</td>
+                    <td>20.000.000</td>
+                    <td>9:00 25/05/2022</td>
+                    <td><span class="status loaded">Chưa đăng tải</span></td>
+                    <td>...</td>
+                  </tr>
+                </table>
+                <a class="show-more" href="#"
+                  >Xem tất cả<i class="bi bi-chevron-right"></i
+                ></a>
+                <div class="clearfix"></div>
+                <h3 class="title">Thông báo mời thầu</h3>
+                <div class="filter-section">
+                  <div class="left-filter">
+                    <div class="filter-icon second">
+                      <i class="bi bi-funnel"></i>
+                    </div>
+                    <div class="search-input">
+                      <input type="text" placeholder="Tìm kiếm gói thầu" />
+                      <i class="bi bi-search"></i>
+                    </div>
+                  </div>
+                  <div class="right-filter">
+                    <button class="add-btn">Thêm TBMT</button>
+                  </div>
+                  <div class="filter-option second">
+                    <div class="header">
+                      <h4 class="title">Lọc thông tin</h4>
+                      <button class="clear-filter-btn second">Bỏ lọc</button>
+                    </div>
+                    <div class="options">
+                      <div class="option">
+                        <label>Trạng thái</label>
+                        <select>
+                          <option>-</option>
+                          <option>Chưa đăng tải</option>
+                          <option>Đã đăng tải</option>
+                        </select>
+                      </div>
+                      <div class="option">
+                        <label>Ngày tạo</label>
+                        <input type="date" />
+                      </div>
+                      <div class="option">
+                        <label>Ngày cập nhật</label>
+                        <input type="date" />
+                      </div>
+                      <div class="option">
+                        <label>Ngày đóng thầu</label>
+                        <input type="date" />
+                      </div>
+                    </div>
+                    <button class="filter-btn">Lọc ngay</button>
+                  </div>
+                </div>
+                <table class="dashboard-table">
+                  <tr>
+                    <th>Tên gói thầu</th>
+                    <th>Dự toán gói thầu</th>
+                    <th>Thời điểm đăng tải</th>
+                    <th>Thời điểm đóng thầu</th>
+                    <th>Lĩnh vực</th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td>Xây dựng gói thầu nhà ở.....</td>
+                    <td>3.000.000.000 đ</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>Sản xuất</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Xây dựng gói thầu nhà ở.....</td>
+                    <td>3.000.000.000 đ</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>Sản xuất</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Xây dựng gói thầu nhà ở.....</td>
+                    <td>3.000.000.000 đ</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>Sản xuất</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Xây dựng gói thầu nhà ở.....</td>
+                    <td>3.000.000.000 đ</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>9:00 25/05/2022</td>
+                    <td>Sản xuất</td>
+                    <td>...</td>
+                  </tr>
+                </table>
+                <a class="show-more" href="#"
+                  >Xem tất cả<i class="bi bi-chevron-right"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
     <script>
+      $(".filter-icon.first").click(function () {
+        $(".filter-option.first").toggle();
+        $(".filter-icon.first").toggleClass("active");
+
+        $(".filter-option.second").hide();
+        $(".filter-icon.second").removeClass("active");
+      });
+
+      $(".clear-filter-btn.first").click(function () {
+        $(".filter-option.first").hide();
+        $(".filter-icon.first").removeClass("active");
+      });
+
+      $(".filter-icon.second").click(function () {
+        $(".filter-option.second").toggle();
+        $(".filter-icon.second").toggleClass("active");
+
+        $(".filter-option.first").hide();
+        $(".filter-icon.first").removeClass("active");
+      });
+
+      $(".clear-filter-btn.second").click(function () {
+        $(".filter-option.second").hide();
+        $(".filter-icon.second").removeClass("active");
+      });
+
       var data = {
         labels: [
           "Xây dựng hệ thống TCT",
           "Thiết kế trường học",
           "Cung cấp lắp đặt",
           "Tư vấn giải pháp CĐS",
-          "Thi công xây dựng"
+          "Thi công xây dựng",
         ],
         datasets: [
           {
@@ -194,29 +408,30 @@
               "#E58514",
               "#1EA728",
               "#DF2727",
-              "#212121"
+              "#212121",
             ],
             hoverBackgroundColor: [
               "#143363",
               "#E58514",
               "#1EA728",
               "#DF2727",
-              "#212121"
-            ]
-          }]
+              "#212121",
+            ],
+          },
+        ],
       };
 
       const config = {
-        type: 'doughnut',
+        type: "doughnut",
         data: data,
         options: {
           responsive: true,
           cutout: 100,
           plugins: {
             legend: {
-              display: false
-            }
-          }
+              display: false,
+            },
+          },
         },
       };
 
