@@ -600,8 +600,51 @@
         },
       };
 
+      var data1 = {
+        labels: [
+          "Xây dựng hệ thống TCT",
+          "Thiết kế trường học",
+          "Cung cấp lắp đặt",
+          "Tư vấn giải pháp CĐS",
+          "Thi công xây dựng",
+        ],
+        datasets: [
+          {
+            data: [300, 50, 100, 80, 70],
+            backgroundColor: [
+              "#143363",
+              "#E58514",
+              "#1EA728",
+              "#DF2727",
+              "#212121",
+            ],
+            hoverBackgroundColor: [
+              "#143363",
+              "#E58514",
+              "#1EA728",
+              "#DF2727",
+              "#212121",
+            ],
+          },
+        ],
+      };
+
+      const config1 = {
+        type: "doughnut",
+        data: data1,
+        options: {
+          responsive: true,
+          cutout: 100,
+          plugins: {
+            legend: {
+              display: false,
+            },
+          },
+        },
+      };
+
       const chart1 = new Chart(document.getElementById("chart-1"), config);
-      const chart2 = new Chart(document.getElementById("chart-2"), config);
+      const chart2 = new Chart(document.getElementById("chart-2"), config1);
     </script>
   </body>
 </html>
