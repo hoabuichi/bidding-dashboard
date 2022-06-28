@@ -629,7 +629,7 @@
   background-color: black;
   opacity: 0.5;
   z-index: 999;
-  display: none;
+  display: block;
 }
 
 .add-bidding-popup {
@@ -639,7 +639,7 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 1000;
-  display: none;
+  display: block;
 
   .header-popup {
     background: #F2F2F2;
@@ -666,21 +666,38 @@
     max-height: calc(100vh - 150px);
 
     h4 {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 22px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
       color: #000000;
-      margin-bottom: 14px;
+      margin-bottom: 18px;
     }
 
     .input-item {
       display: flex;
       flex-direction: column;
+      margin-bottom: 18px;
+      position: relative;
+
       label {
         font-size: 16px;
         line-height: 20px;
         color: #333333;
         margin-bottom: 8px;
+      }
+
+      .unit {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 42px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #F0F0F0;
+        border: 1px solid #DADADA;
+        border-radius: 0px 3px 3px 0px;
       }
 
       > input, > select, > textarea {
@@ -689,6 +706,17 @@
         height: 42px;
         padding-left: 7px;
         outline: none;
+        color: #999999;
+        font-size: 14px;
+
+        &[disabled] {
+          cursor: not-allowed;
+          background: #F2F2F2;
+        }
+      }
+
+      > select {
+        background: white;
       }
 
       > textarea {
@@ -762,7 +790,11 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 18px;
-      margin-top: 18px;
+      margin-bottom: 18px;
+
+      .input-item {
+        margin-bottom: 0;
+      }
     }
 
     .action-btns {
